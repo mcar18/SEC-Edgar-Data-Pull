@@ -12,7 +12,7 @@ HEADERS = {
     "Connection": "keep-alive",
     "Referer": "https://www.sec.gov/"
 }
-
+#test
 def get_filings(cik, form_types=["10-K", "10-Q"]):
     url = f"https://data.sec.gov/submissions/CIK{cik.zfill(10)}.json"
     with requests.Session() as session:

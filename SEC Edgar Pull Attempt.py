@@ -17,7 +17,7 @@ def get_cik_from_api(ticker):
         if cik:
             return cik
     return None
-
+#ft
 # Function to fetch 10-K or 10-Q filing from the SEC EDGAR API for a given CIK
 def fetch_filings_from_api(cik, filing_type="10-K", count=5):
     url = f"https://data.sec.gov/submissions/CIK{cik}.json"
